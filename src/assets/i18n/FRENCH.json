@@ -1,0 +1,152 @@
+{
+  "Welcome": "Bonjour",
+  "Header": {
+    "ConsoleAdmin": "Console d'administration",
+    "ParametreNotification": "Paramètrage Notification",
+    "Parametre": "Paramètre",
+    "UserInfo": "Information Utilisateur",
+    "Deconnecter": "Se déconnecter",
+    "Login": "Se connecter"
+  },
+  "Service": "Marhba Angular !",
+  "SELECT": "",
+  "Erreur": "Erreur!",
+  "ErrorMsg": "Le champs est obligatoire",
+  "Souscription": {
+    "AjouterUnAdministrateur": "Ajouter un Administrateur",
+    "AjouterAdmin": "Ajouter administrateur",
+    "Titre": "Titre",
+    "TitreObligatoire": "Le titre est obligatoire",
+    "ListAdministration": "Liste des administrateurs",
+    "Nom": "Nom",
+    "NomObligatoire": "Le nom est obligatoire",
+    "Prenom": "Prénom",
+    "PrenomObligatoire": "Le prénom est obligatoire",
+    "Cin": "CIN",
+    "CinObligatoire": "La cin est obligatoire",
+    "Email": "Email",
+    "EmailObligatoire": "L'email est obligatoire",
+    "Telephone": "Téléphone",
+    "TelephoneObligatoire": "Le numéro de téléphone est obligatoire",
+    "AdresseEmail": "Adresse email",
+    "Adresse": "Adresse",
+    "AucunAdministrateur": "Vous avez (0) administrateur",
+    "Optionnel": "Optionnel",
+    "ChampsObligatoire": "Le champs est obligatoire",
+    "TypeDeSouscriptionContratMere": "Type de souscription du contrat Mère",
+    "MonoSociete": "Mono société",
+    "GroupeDeSociete": "Groupe de société",
+    "Contrat": "Contrat",
+    "Souscripteur": "Souscripteur",
+    "NumTiers": "Numéro tiers",
+    "NumeroTiersObligatoire": "Le numéro tiers est obligatoire",
+    "RaisonSociale": "Raison sociale",
+    "RaisonSocialeObligatoire": "La raison sociale est obligatoire",
+    "Denomination": "Dénomination",
+    "NumeroTelephoneIncorrecte": "Le numéro de téléphone est incorrecte",
+    "EmailIncorrecte": "L'email est incorrecte",
+    "CinIncorrecte": "La cin est incorrecte",
+    "DocumentRattache": "Documents rattachés",
+    "DeposezVotreDocumentIci": "Faites glisser et déposez votre document ici",
+    "Ou": "ou",
+    "ChoisissirFichier": "cliquer et choisissez votre fichier",
+    "TailleFichierMaximale": "1 MO taille de fichier maximale",
+    "Documents": "Documents",
+    "DocumentObligatoire": " Le document est obligatoire",
+    "Services": "Services",
+    "PremierSignataireDuContrat": "Premier signataire du contrat",
+    "DeuxiemeSignataireDUContrat": "Deuxième signataire du contrat",
+    "Monsieur": "Mr",
+    "Madame": "Mme",
+    "AdministrationService": "Administration du Service ",
+    "Banque": "Banque",
+    "Client": "Client",
+    "AjoutUnSignataire": "Ajouter un Signataire",
+    "Modifier": "Modifier",
+    "Supprimer": "Supprimer",
+    "AjouteSignataire": "Ajouter signataire",
+    "ListSignataires": "Liste des signataires",
+    "AcunSignataire": "Vous avez (0) signataire",
+    "DeclarationEntreprise": "Déclaration entreprise",
+    "RefContrat": "Ref.Contrat",
+    "DelegationDuPortail": "Délégation du portail",
+    "PremiereCommande": "Première commande",
+    "NombreTocken": "Nombre de token",
+    "Tarification": "Tarification",
+    "CompteDePrelevement": "Compte de prélèvement",
+    "CompteDePrelevementObligatoire": "Le compte de prélèvement est obligatoire",
+    "CompteIncorrect": "Le numéro de compte est incorrecte",
+    "CompteNoSouscripteur": "Le numéro de compte n'appartient pas à ce souscripteur",
+    "SouscriptionAuPortail": "Souscription au portail",
+    "MontantAprelever": "Montant à prélever",
+    "FraisSouscription": "Frais souscription",
+    "AcquisitionsTockens": "Acquisitions des tokens",
+    "TarifUnitaire": "Tarif Unitaire",
+    "MontantTotal": "Montant Total",
+    "GestionPortail": "Gestion du portail",
+    "Derogation": "Dérogation",
+    "TotalTockens": "Total tokens",
+    "NombreTokenMin": "Un token au minimum est obligatoire",
+    "Abandonner": "Abandonner",
+    "Souscription": "Souscription",
+    "NomSignataire": "Nom de signataire",
+    "NomAdmin": "Nom d'administrateur",
+    "Trade": "Trade",
+    "TotalGestion": "Total de gestion",
+    "Precedent": "Précédent",
+    "Steps": {
+      "Phase1": "Déclaration entreprise",
+      "Phase2": "Signataires",
+      "Phase3": "Délégation du portail",
+      "Phase4": "Administration du portail",
+      "Phase5": "Token",
+      "Phase6": "Tarification",
+      "Phase7": "Synthèse"
+    },
+    "NextText": "Suivant"
+  },
+  "Menu": {
+    "Item1": {
+      "label": "Gestion des Contrats",
+      "item1-1": {
+        "label": "Contrat Mère",
+        "item1-1-1": {
+          "label": "Nouveau Contrat "
+        },
+        "item1-1-2": {
+          "label": "Recherche Contrat "
+        }
+      },
+      "item1-2": {
+        "label": "Contrat Filiale ",
+        "item1-2-1": {
+          "label": "Nouveau Contrat "
+        },
+        "item1-2-2": {
+          "label": "Recherche Contrat "
+        }
+      }
+    },
+    "Item2": {
+      "label": "Gestion des Tokens",
+      "item2-1": {
+        "label": "Nouvelle commande"
+      },
+      "item2-2": {
+        "label": "Recherche commande"
+      }
+    }
+  },
+  "Parametre": "Paramètre",
+  "ConsoleAdmin": "Console administration",
+  "ParametrageNotif": "Paramétrage notification",
+  "ChangementLangue": "Changement de langue",
+  "Deconnecter": "Se déconnecter",
+  "Home": {
+    "Welcome": "Bienvenue",
+    "Description": "Cette application permet de gére les contrats du produit ",
+    "Description1": "Module de Gestion des Contrats Mère pour ajouter de nouveaux contrats et consulter celles existantes",
+    "Description2": "Module de Gestion des Contrats Filiale pour ajouter de nouveaux contrats et consulter celles existantes",
+    "Description3": "Module de Gestion des Tokens pour ajouter de nouvelles commandes et consulter celles existantes"
+  }
+}

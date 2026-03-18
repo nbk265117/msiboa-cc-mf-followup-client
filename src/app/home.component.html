@@ -1,0 +1,121 @@
+<div class="main-div">
+
+<div>
+  <ul >
+    <li *ngFor="let item of clients;" >
+      <a style="text-decoration: underline;cursor: pointer"(click)="onClick(item)">
+        {{ item.name }}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="chosedTier && chosedTier.operations" style="margin-left:20px ;margin-right: 80px;margin-top: 12px">
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <div class="d-flex justify-content-between">
+      <div class="nav d-flex bg-white border mx-3 pt-2">
+        <e-checks
+                (checkedValue)="guichetValue($event)"
+                [class]="'mx-xxl-5 small-text-body'"
+                [label]="'Guichet'"
+                [labelClass]="'mt-1'"
+                [type]="'switch'"
+                [value]="true"
+                [id]="'id1'"
+        ></e-checks>
+        <e-checks
+                (checkedValue)="persPhysiqueValue($event)"
+                [class]="'mx-xxl-5 small-text-body'"
+                [label]="'Virement'"
+                [labelClass]="'mt-1'"
+                [type]="'switch'"
+                [value]="true"
+                [id]="'id2'"
+        ></e-checks>
+      </div>
+      <div class="mx-4">
+        <e-button
+                [class]="'btn-secondary'"
+                [text]="'Rechercher'"
+                type="submit"
+                (click)="dt.searchFilter(searchForm.value, 'contains')"
+        ></e-button>
+      </div>
+    </div>
+
+    <div class="form p-4 bg-white border mx-3 mt-3 form">
+
+     <div class="d-flex justify-content-between m-t-b" *ngIf="checkValues[0]">
+        <div class="w-48">
+          <p class="small-text-body">Guichet</p>
+        </div>
+        <div class="w-m d-flex">
+          <div class="w-400">
+            <e-input [class]="'right form-control'"></e-input>
+          </div>
+          <div class="w-400">
+            <e-checks
+                    [class]="'mx-xxl-5 mrt small-text-body'"
+                    [label]="'Recherche limitée au guichet'"
+                    [value]="true"
+            ></e-checks>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="d-flex justify-content-between m-t-b" *ngIf="checkValues[1]">
+        <div class="w-48">
+          <p class="small-text-body">Virement</p>
+        </div>
+
+        <div class="w-m d-flex">
+          <div class="w-400">
+            <e-input
+                    [label]="'Rib'"
+                    [placeholder]="'Saisissez ic'"
+                    [class]="'right form-control'"
+                    [control]="$any(searchForm).controls.ribBeneficiary"
+            ></e-input>
+          </div>
+          <div class="w-400">
+            <e-input
+                    [label]="'Motif'"
+                    [placeholder]="'Saisissez ic'"
+                    [class]="'right form-control'"
+                    [control]="$any(searchForm).controls.motif"
+            ></e-input>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </form>
+  <e-table
+         #dt
+         [value]="chosedTier.operations" [totalRecords]="chosedTier.operations.length"
+         [paginator]="true"   [globalFilterFields]="['ribBeneficiary', 'motif']"
+         [rowsPerPageOptions]="[5, 10, 15]">
+    <ng-template eTemplate="header">
+    <tr>
+      <th>RIP Beneficiaire</th>
+      <th>Montant</th>
+      <th>Motif</th>
+      <th>Date de trx</th>
+
+    </tr>
+    </ng-template>
+    <ng-template eTemplate="body" let-d>
+    <tr>
+      <td>{{ d.ribBeneficiary }}</td>
+      <td>{{ d.montant }}</td>
+      <td>{{ d.motif }}</td>
+      <td>{{ d.date }}</td>
+
+    </tr>
+    </ng-template>
+  </e-table>
+</div>
+
+</div>

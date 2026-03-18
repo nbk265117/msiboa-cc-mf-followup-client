@@ -1,0 +1,156 @@
+{
+  "Welcome": "Welcome",
+  "Service": "Welcome Angular !",
+  "Header": {
+    "ConsoleAdmin": "Administration Console",
+    "ParametreNotification": "Notification Settings",
+    "Parametre": "Settings",
+    "UserInfo": "User Information",
+    "Deconnecter": "Logout",
+    "Login": "Login"
+  },
+
+  "Service": "Welcome Angular !",
+  "Select": "Select",
+  "Erreur": "Error!",
+  "Title": "Error!",
+  "ErrorMsg": "The field is required",
+  "Souscription": {
+    "AjouterUnAdministrateur": "Add an Administrator",
+    "AjouterAdmin": "Add administrator",
+    "Titre": "Title",
+    "TitreObligatoire": "Title is required",
+    "ListAdministration": "List of administrators",
+    "Nom": "Last Name",
+    "NomObligatoire": "Last name is required",
+    "Prenom": "First Name",
+    "PrenomObligatoire": "First name is required",
+    "Cin": "CIN",
+    "CinObligatoire": "Cin is required",
+    "Email": "Email",
+    "EmailObligatoire": "Email is required",
+    "Telephone": "Phone number",
+    "TelephoneObligatoire": "Phone number is required",
+    "AdresseEmail": "Email address",
+    "Adresse": "Address",
+    "AucunAdministrateur": "You have (0) administrator",
+    "Optionnel": "Optional",
+    "ChampsObligatoire": "The field is required",
+    "TypeDeSouscriptionContratMere": "Subscription type of the parent contract",
+    "MonoSociete": "Single company",
+    "GroupeDeSociete": "Group of companies",
+    "Contrat": "Contract",
+    "Souscripteur": "Subscriber",
+    "NumTiers": "Tiers number",
+    "NumeroTiersObligatoire": "Tiers number is required",
+    "RaisonSociale": "Business name",
+    "RaisonSocialeObligatoire": "Business name is required",
+    "Denomination": "Denomination",
+    "NumeroTelephoneIncorrecte": "The phone number is incorrect",
+    "EmailIncorrecte": "Email is incorrect",
+    "CinIncorrecte": "CIN is incorrect",
+    "DocumentRattache": "Attached documents",
+    "DeposezVotreDocumentIci": "Drag and drop your document here",
+    "Ou": "or",
+    "ChoisissirFichier": "Click and choose your file",
+    "TailleFichierMaximale": "1 MO maximum file size",
+    "Documents": "Documents",
+    "DocumentObligatoire": " The document is required",
+    "Services": "Services",
+    "PremierSignataireDuContrat": "First signatory of the contract",
+    "DeuxiemeSignataireDUContrat": "Second signatory of the contract",
+    "Monsieur": "M",
+    "Madame": "Mrs",
+    "AdministrationService": "Service administrator",
+    "Banque": "Bank",
+    "Client": "Customer",
+    "AjoutUnSignataire": "Add a signer",
+    "AjouteSignataire": "Add signer",
+    "Modifier": "Update",
+    "Supprimer": "Delete",
+    "ListSignataires": "List of signatories",
+    "AcunSignataire": "You have (0) signer",
+    "DeclarationEntreprise": "Company declaration",
+    "RefContrat": "Ref.Contract",
+    "DelegationDuPortail": "Portal Delegation",
+    "PremiereCommande": "First order",
+    "NombreTocken": "Number of tokens",
+    "Tarification": "pricing",
+    "CompteDePrelevement": "Debit account",
+    "CompteDePrelevementObligatoire": "Debit account is required",
+    "CompteIncorrect": "Account number is incorrect",
+    "CompteNoSouscripteur": "This account number doesn't belong to subscriber",
+    "SouscriptionAuPortail": "Portal subscription",
+    "MontantAprelever": "Amount to be withdrawn",
+    "FraisSouscription": "Subscription fees",
+    "AcquisitionsTockens": "Acquisition of tokens",
+    "TarifUnitaire": "Unit Price",
+    "MontantTotal": "Total amount",
+    "GestionPortail": "Portal management",
+    "Derogation": "Exemption",
+    "TotalTockens": "Total tokens",
+    "NombreTokenMin": "At least one token is required",
+    "Abandonner": "Abandon",
+    "Souscription": "Subscription",
+    "NomSignataire": "Signatory name",
+    "NomAdmin": "Administrator name",
+    "Trade": "Trade",
+    "TotalGestion": "Total Management",
+    "Precedent": "Previous",
+    "Steps": {
+      "Phase1": "Company statement",
+      "Phase2": "Signatories",
+      "Phase3": "Portal Delegation",
+      "Phase4": "Portal Administration",
+      "Phase5": "Token",
+      "Phase6": "Pricing",
+      "Phase7": "Synthesis"
+    },
+
+    "NextText": "Next"
+  },
+  "Menu": {
+    "Item1": {
+      "label": "Contract management",
+      "item1-1": {
+        "label": " Parent contract",
+        "item1-1-1": {
+          "label": "New contract "
+        },
+        "item1-1-2": {
+          "label": "Search contract"
+        }
+      },
+      "item1-2": {
+        "label": "Subsidiary contract ",
+        "item1-2-1": {
+          "label": "New contract"
+        },
+        "item1-2-2": {
+          "label": "Search contract "
+        }
+      }
+    },
+    "Item2": {
+      "label": "Gestion des Tokens",
+      "item2-1": {
+        "label": "New order"
+      },
+      "item2-2": {
+        "label": "Order search"
+      }
+    }
+  },
+  "Parametre": "Setting",
+  "ConsoleAdmin": "Admin console",
+  "ParametrageNotif": "Notification settings",
+  "ChangementLangue": "Language change",
+  "Deconnecter": "Sign out",
+  "Home": {
+    "Welcome": "Welcome",
+    "Description": "This application allows you to manage product contracts ",
+    "Description1": "Mother Contract Management Module to add new contracts and view existing ones",
+    "Description2": "Subsidiary Contract Management Module to add new contracts and view existing ones",
+    "Description3": "Token Management module to add new orders and view existing ones"
+  }
+}
