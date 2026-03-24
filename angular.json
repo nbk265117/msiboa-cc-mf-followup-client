@@ -16,20 +16,26 @@
             "outputPath": "dist/msiboa-cc-mf-followup-client",
             "index": "src/index.html",
             "main": "src/main.single-spa.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/eai-lib-material/assets/css/bootstrap.min.css",
+              "node_modules/eai-lib-material/assets/css/eai_icons.css",
+              "node_modules/eai-lib-material/assets/css/eai_default_style.scss",
+              "node_modules/eai-lib-material/assets/css/eai_colors.scss",
+              "node_modules/eai-lib-material/assets/fonts/css/all.min.css",
+              "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/zone.min.js"
+            ],
+            "preserveSymlinks": true,
             "customWebpackConfig": {
-              "path": "extra-webpack.config.js",
+              "path": "./extra-webpack.config.js",
               "libraryName": "msiboa-cc-mf-followup-client",
               "libraryTarget": "umd"
             },
@@ -37,11 +43,12 @@
           },
           "configurations": {
             "production": {
+              "main": "src/main.single-spa.ts",
               "budgets": [
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -57,11 +64,10 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true,
-              "outputHashing": "none"
+              "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
@@ -94,7 +100,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

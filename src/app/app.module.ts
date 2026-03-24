@@ -1,21 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
+import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {CoreModule} from "./core/core.module";
 import {TranslateModule} from "@ngx-translate/core";
-import {EaiLibMaterialModule} from "eai-lib-material";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {CommonModule} from "@angular/common";
+import {EaiLibMaterialModule} from "eai-lib-material";
 
 @NgModule({
   declarations: [
-    HomeComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent
   ],
-  imports: [FormsModule,
-    BrowserModule, AppRoutingModule, CoreModule, TranslateModule, EaiLibMaterialModule, ReactiveFormsModule
+  imports: [
+    FormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    CoreModule,
+    TranslateModule,
+    ReactiveFormsModule,
+    CommonModule,
+    EaiLibMaterialModule
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

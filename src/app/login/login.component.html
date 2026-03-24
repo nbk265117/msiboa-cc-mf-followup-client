@@ -1,0 +1,82 @@
+<div class="login-container">
+  <div class="login-wrapper">
+    <!-- Logo et titre -->
+    <div class="login-header">
+      <div class="logo">
+        <h1>Follow Up</h1>
+        <span class="subtitle">Espace Client</span>
+      </div>
+    </div>
+
+    <!-- Carte de connexion -->
+    <div class="login-card">
+      <div class="card-header">
+        <h2>Connexion</h2>
+        <p>Accédez à votre espace personnel</p>
+      </div>
+
+      <!-- Alerte -->
+      <e-alert
+        *ngIf="showAlert"
+        [type]="alertType"
+        [text]="alertMessage"
+        [showAlert]="showAlert"
+        [btnClose]="true"
+        (event)="closeAlert()">
+      </e-alert>
+
+      <!-- Formulaire -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <e-input
+          label="Identifiant"
+          [required]="true"
+          type="text"
+          placeholder="Entrez votre identifiant"
+          [control]="usernameControl"
+          [errorInput]="usernameControl.invalid && usernameControl.touched"
+          errorMsg="L'identifiant est requis">
+        </e-input>
+
+        <e-input
+          label="Mot de passe"
+          [required]="true"
+          type="password"
+          placeholder="Entrez votre mot de passe"
+          [control]="passwordControl"
+          [errorInput]="passwordControl.invalid && passwordControl.touched"
+          errorMsg="Le mot de passe doit contenir au moins 6 caractères">
+        </e-input>
+
+        <div class="form-options">
+          <label class="checkbox-label">
+            <input type="checkbox" formControlName="rememberMe">
+            Se souvenir de moi
+          </label>
+          <a href="javascript:void(0)" class="forgot-link" (click)="onForgotPassword()">
+            Mot de passe oublié ?
+          </a>
+        </div>
+
+        <div class="form-actions">
+          <e-button
+            [text]="isLoading ? 'Connexion...' : 'Se connecter'"
+            styleBtn="primary"
+            [loading]="isLoading"
+            [disabledBtn]="isLoading">
+          </e-button>
+        </div>
+      </form>
+
+      <!-- Footer de la carte -->
+      <div class="card-footer">
+        <p>Vous n'avez pas de compte ?</p>
+        <a href="javascript:void(0)" class="register-link">Contactez votre administrateur</a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="login-footer">
+      <p>&copy; 2024 Follow Up - BOA. Tous droits réservés.</p>
+    </div>
+  </div>
+</div>

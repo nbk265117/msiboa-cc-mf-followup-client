@@ -6,13 +6,9 @@ import {assetUrl} from "../../single-spa/asset-url";
 
 
 export function HttpLoaderFactory(http: HttpClient) {
-    // Adjust the translation file URL based on the microfrontend's base URL
-    // assetUrl('i18n/')
-    //http://localhost:9099/assets/i18n/
-    return new TranslateHttpLoader(http,  assetUrl('i18n/'), '.json');
+    return new TranslateHttpLoader(http, assetUrl('i18n/'), '.json');
 }
 
-// @ts-ignore
 @NgModule({
     imports: [HttpClientModule,
         TranslateModule.forRoot({

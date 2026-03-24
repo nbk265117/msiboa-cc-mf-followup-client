@@ -1,57 +1,36 @@
-:host {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #043F7B 0%, #022a52 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
-  li {
-    float: left;
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
   }
-  li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover:not(.active) {
-    background-color: #ddd;
-  }
-  li a.active {
+
+  button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #09B2B9;
     color: white;
-    background-color: #04AA6D;
-  }
-
-  .nav {
+    border: none;
     border-radius: 8px;
-    width: 88%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #078a8f;
+    }
   }
-
-  .w-48 {
-    width: 11%;
-  }
-
-  .m-r-l {
-    margin-right: 1%;
-    margin-left: -14%;
-  }
-
-  .form {
-    border-radius: 8px;
-    width: 98%;
-  }
-
-  .w-m {
-    width: 86%;
-    // margin-right: 69%;
-  }
-
-
-  .w-400 {
-    width: 400px;
-  }
-
 }
