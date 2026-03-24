@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   isLoading = false;
   showAlert = false;
   alertMessage = '';
-  alertType = 'error';
+  alertType: 'error' | 'succes' | 'warning' | 'info' = 'error';
 
   // FormControls pour e-input
   usernameControl = new FormControl('', [Validators.required]);
@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit {
       if (username === 'client' && password === 'client123') {
         this.showAlert = true;
         this.alertMessage = 'Connexion réussie !';
-        this.alertType = 'success';
+        this.alertType = 'succes';
 
         // Stocker le token si rememberMe est coché
         if (this.loginForm.value.rememberMe) {
